@@ -110,7 +110,7 @@ html {
 }
 body {
   color: var(--text-color);
-  width: 75%;
+  width: 90%;
   margin: 0em auto;
   display: flex;
   flex-direction: column;
@@ -181,21 +181,21 @@ section {
 
 #menu {
   display: flex;
-  flex-direction: row;
-  max-width: 50%;
-
+  flex-direction: column;
+  max-width: 100%;
+  gap: 1em;
   color: gray;
   animation-name: menu;
   animation-duration: 0.8s;
   animation-timing-function: ease-out;
-  margin-top: 10em;
+  margin-top: 40em;
 }
 
 #menu a {
   font-family: "roboto mono", monospace;
   font-size: 0.9em;
   font-weight: light;
-  margin-right: 2em;
+  margin-right: 0;
   padding: 5px;
   border: 2px solid var(--light-accent-color);
   box-shadow: 5px 5px 0px 2px var(--light-accent-color);
@@ -217,11 +217,12 @@ section {
   animation: ldIcon;
   animation-duration: 1.5s;
   position: fixed;
-  top: 1.9vw;
+  top: 1em;
+  right: 1em;
   transition: All 1s;
 }
 #about-me-section {
-  width: 75%;
+  width: 100%;
   line-height: 1.7em;
 }
 section h2 {
@@ -305,6 +306,8 @@ section h2 {
 
 #links-section > div {
   margin-left: 1em;
+  grid-template-columns: 1fr;
+  width: 100%;
 }
 
 #links-section > div > * {
@@ -381,7 +384,7 @@ article li {
 #projects-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(30rem, 0.5fr));
-  gap: 3em;
+  gap: 1.5em;
 }
 
 #projects-wrapper > div {
@@ -416,10 +419,10 @@ article li {
   top: -2px;
 }
 #projects-wrapper img {
-  width: 150px;
-  height: 300px;
+  width: 100px;
+  height: auto;
   padding: 1em;
-  margin: 1em 1em 1em 2em;
+  margin: 0em auto;
   opacity: 0.8;
   box-shadow: 2px 2px 0px 4px rgba(240, 240, 240, 0.5),
     -2px -2px 0px 0px var(--light-accent-color);
