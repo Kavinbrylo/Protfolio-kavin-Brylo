@@ -304,21 +304,15 @@ section h2 {
 }
 
 #links-section > div {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 1em;
-  width: 100%;
   margin-left: 1em;
 }
 
 #links-section > div > * {
-  font-weight: 700;
-  font-size: 1.2em;
-  padding: 0.5em;
+  min-width: max-content;
   opacity: 0.5;
-  border: 2px solid var(--light-accent-color);
-  box-shadow: 5px 5px 0 2px var(--light-accent-color);
-  transition: all 0.4s;
+  margin-right: 2em;
+  font-weight: 700;
+  font-size: 1.5em;
 }
 
 #links-section > div > *:hover {
